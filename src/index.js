@@ -14,7 +14,7 @@ let myId = null;
 let myName = null;
 
 function connect(nickname) {
-    ws = new WebSocket('eventsourcewebsockets-backend-production.up.railway.app'); 
+    ws = new WebSocket('wss://eventsourcewebsockets-backend-production.up.railway.app'); 
 
     ws.onopen = () => {
         ws.send(JSON.stringify({
