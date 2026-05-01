@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSocket Chat</title>
+<script defer src="bundle.js"></script></head>
+<body>
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <h2>Выберите псевдоним</h2>
+            <input type="text" id="nickname-input" placeholder="Введите ник...">
+            <button id="join-btn">Продолжить</button>
+            <p id="error-msg" class="error hidden">Ник занят!</p>
+        </div>
+    </div>
+>
+    <div id="chat-container" class="container hidden">
+        <div class="sidebar">
+            <ul id="users-list"></ul>
+        </div>
+        <div class="chat-window">
+            <div id="messages" class="messages"></div>
+            <div class="input-area">
+                <input type="text" id="message-input" placeholder="Type your message here">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
